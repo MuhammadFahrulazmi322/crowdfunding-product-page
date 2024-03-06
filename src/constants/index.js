@@ -5,9 +5,9 @@ export const navlink = [
 ];
 
 export const backers = [
-  { value: "$89,914", label: "of $100,000 backed" },
-  { value: "5,007", label: "total backers" },
-  { value: "56", label: "days left" },
+  { value: "$89,914", label: "of $100,000 backed", line:"true" },
+  { value: "5,007", label: "total backers", line:"true" },
+  { value: "56", label: "days left", line:false },
 ];
 
 export const feature = [
@@ -16,7 +16,7 @@ export const feature = [
     subtitle: "Pledge $25 or more",
     description:
       "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
-    stock: "101 left",
+    stock: 101,
     button: "Select Reward",
     disabled: false,
   },
@@ -25,7 +25,7 @@ export const feature = [
     subtitle: "Pledge $75 or more",
     description:
       "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
-    stock: "64 left",
+    stock: 64,
     button: "Select Reward",
     disabled: false,
   },
@@ -34,7 +34,7 @@ export const feature = [
     subtitle: "Pledge $200 or more",
     description:
       "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
-    stock: "0 left",
+    stock: 0,
     button: "Out of Stock",
     disabled: true,
   },

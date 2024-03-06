@@ -1,22 +1,22 @@
 import { navlink } from "../constants";
-import { ic_humburger, logo } from "../images";
+import { ic_humburger, logo } from "../assets/images";
 const Nav = () => {
   return (
-    <header className="bg-black padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center">
-        <a href="/" className="">
-          <img src={logo} alt="logo" width={150} />
+    <header className="p-8 lg:px-48 lg:py-14 absolute z-10 w-full">
+      <nav className="flex justify-between items-center max-container">
+        <a href="/" >
+          <img src={logo} alt="logo" width={100} />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-end items-center gap-6 max-lg:hidden">
           {navlink.map((item) => (
             <li key={item.label}>
-              <a href={item.href} className="text-white">
+              <a href={item.href} className="text-white text-sm">
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <div className="lg:hidden">
+        <div className="hidden max-lg:block">
           <img
             src={ic_humburger}
             alt="humburger"
