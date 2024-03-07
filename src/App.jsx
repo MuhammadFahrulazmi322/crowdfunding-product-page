@@ -1,26 +1,39 @@
-import About from "./sections/About"
-import Features from "./sections/Features"
-import Hero from "./sections/Hero"
-import Nav from "./sections/Nav"
-import Product from "./sections/Product"
+import { useState } from "react";
+import Modal from "./components/Modal";
+import About from "./sections/About";
+import Features from "./sections/Features";
+import Hero from "./sections/Hero";
+import Nav from "./sections/Nav";
+import Product from "./sections/Product";
 
 function App() {
+  const [isModalOpen, setModalOpen] = useState(false);
 
+  const handleOpenModal = () => {
+    setModalOpen(true);
+    document.body.classList.add('modal-open');
+  };
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    document.body.classList.remove('modal-open');
+
+  };
   return (
-    <main className="pb-20">
-      <Nav />
-      <Hero/>
-      <div className="w-4/5 m-auto max-container">
-      <Product/>
-      <About/>
-      <Features/>
-      </div>
-      
-      <section>
+    <>
 
-      </section>
-    </main>
-  )
+
+      <main className={`pb-20`}>
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal}/>
+        <Nav />
+        <Hero />
+        <div className="w-4/5 m-auto max-container">
+          <Product openModal={handleOpenModal} />
+          <About />
+          <Features />
+        </div>
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;

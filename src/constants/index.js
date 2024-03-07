@@ -46,7 +46,6 @@ export const project = [
     subtitle: "",
     description:
       "Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.",
-    stock: "",
 
     selectedTitle: "",
     button1: "",
@@ -58,7 +57,7 @@ export const project = [
     subtitle: "Pledge $25 or more",
     description:
       "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
-    stock: "101 left",
+    stock: 101,
 
     selectedTitle: "Enter your pledge",
     button1: "$25",
@@ -70,7 +69,7 @@ export const project = [
     subtitle: "Pledge $75 or more",
     description:
       "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
-    stock: "64 left",
+    stock: 64,
 
     selectedTitle: "Enter your pledge",
     button1: "$75",
@@ -82,7 +81,7 @@ export const project = [
     subtitle: "Pledge $200 or more",
     description:
       "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
-    stock: "0 left",
+    stock: 0,
 
     selectedTitle: "Enter your pledge",
     button1: "$200",

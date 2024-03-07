@@ -1,5 +1,4 @@
 import favicon from "./favicon-32x32.png";
-import ic_bookmark from "./icon-bookmark.svg";
 import ic_check from "./icon-check.svg";
 import ic_close_menu from "./icon-close-menu.svg";
 import ic_humburger from "./icon-hamburger.svg";
@@ -10,7 +9,6 @@ import logo from "./logo.svg";
 
 export {
   favicon,
-  ic_bookmark,
   ic_check,
   ic_close_menu,
   ic_humburger,

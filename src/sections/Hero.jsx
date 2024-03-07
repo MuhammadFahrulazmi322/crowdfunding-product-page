@@ -26,7 +26,7 @@ function Hero() {
       <img 
       src={isMobile ? heroMobile : heroDesktop} 
       alt={isMobile ? "hero mobile" : "hero desktop"} 
-      className="object-cover w-full " />
+      className="object-cover w-full contrast-[85%]" />
     </section>
   );
 }
