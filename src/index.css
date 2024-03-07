@@ -13,6 +13,31 @@
 body.modal-open {
   overflow: hidden;
 }
+input[type="radio"] {
+  position: relative;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: 16px;
+  color: white;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.5px solid darkgray;
+  border-radius: 50%;
+  
+}
+input[type="radio"]:checked:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: darkcyan;
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;
