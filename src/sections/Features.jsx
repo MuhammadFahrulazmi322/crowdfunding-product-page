@@ -2,7 +2,7 @@ import React from "react";
 import { feature } from "../constants";
 import Button from "../components/Button";
 
-function Features() {
+function Features({openDialog}) {
   return (
     <section className="px-8 max-md:px-2 lg:px-40 lg:mt-10">
       <div className="flex flex-col gap-8 lg:px-10">
@@ -25,10 +25,19 @@ function Features() {
                 left
               </p>
               <div>
+                {item.disabled ?
                 <Button
-                  label={`${item.disabled ? "Out of Stock" : "Select Reward"}`}
-                  disabled={`${item.disabled ? "bg-dark-gray" : ""}`}
+                label="Out of Stock"
+                backgroundColor={"!bg-dark-gray cursor-default"}
+                textColor={"text-white"}
+
+              />
+                :
+                <Button
+                  label="Select Reward"
+                  
                 />
+                }
               </div>
             </div>
           </div>

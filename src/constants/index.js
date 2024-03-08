@@ -48,7 +48,7 @@ export const project = [
       "Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.",
 
     selectedTitle: "",
-    button1: "",
+    button1: 0,
     button2: "",
     disabled: false,
   },
@@ -56,11 +56,11 @@ export const project = [
     title: "Bamboo Stand",
     subtitle: "Pledge $25 or more",
     description:
-      "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
+      "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
     stock: 101,
 
     selectedTitle: "Enter your pledge",
-    button1: "$25",
+    button1: 25,
     button2: "Continue",
     disabled: false,
   },
@@ -68,11 +68,11 @@ export const project = [
     title: "Black Edition Stand",
     subtitle: "Pledge $75 or more",
     description:
-      "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
+      "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
     stock: 64,
 
     selectedTitle: "Enter your pledge",
-    button1: "$75",
+    button1: 75,
     button2: "Continue",
     disabled: false,
   },
@@ -84,7 +84,7 @@ export const project = [
     stock: 0,
 
     selectedTitle: "Enter your pledge",
-    button1: "$200",
+    button1: 200,
     button2: "Continue",
     disabled: true,
   },
