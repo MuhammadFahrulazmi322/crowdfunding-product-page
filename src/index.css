@@ -9,10 +9,12 @@
   scroll-behavior: smooth;
 }
 
-/* Tambahkan overflow-hidden ke elemen body saat modal terbuka */
+/* when modal open should overflow hidden for body */
 body.modal-open {
   overflow: hidden;
 }
+
+
 input[type="radio"] {
   position: relative;
   appearance: none;
@@ -20,8 +22,8 @@ input[type="radio"] {
   margin: 0;
   font: 16px;
   color: white;
-  width: 1.15em;
-  height: 1.15em;
+  width: 1em;
+  height: 1em;
   border: 0.5px solid darkgray;
   border-radius: 50%;
   
@@ -49,8 +51,6 @@ input[type="radio"]:checked:before {
   .modal-box{
     @apply bg-white relative  translate-y-[40%] lg:translate-y-1/3 p-4 sm:p-8 w-11/12 lg:w-[60%] rounded-lg flex flex-col gap-6;
   }
-
-  
 }
 
 

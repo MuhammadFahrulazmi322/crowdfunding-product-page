@@ -13,36 +13,40 @@ function App() {
 
   const handleOpenModal = () => {
     setModalOpen(true);
-    document.body.classList.add('modal-open');
+    document.body.classList.add("modal-open");
   };
   const handleCloseModal = () => {
     setModalOpen(false);
-    document.body.classList.remove('modal-open');
-
+    document.body.classList.remove("modal-open");
   };
   const handleOpenDialog = () => {
-    setModalOpen(false)
+    setModalOpen(false);
     setDialogOpen(true);
-    document.body.classList.add('modal-open');
+    document.body.classList.add("modal-open");
   };
   const handleCloseDialog = () => {
     setDialogOpen(false);
-    document.body.classList.remove('modal-open');
-
+    document.body.classList.remove("modal-open");
   };
   return (
     <>
-
-
-      <main className={`pb-20`}>
-        <Modal isOpen={isModalOpen} onClose={handleCloseModal} openDialog={handleOpenDialog}/>
-        <DialogBox isOpen={isDialogOpen} onClose={handleCloseDialog}/>
+      <main className={`pb-20 bg-gray-100`}>
+        <Modal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          openDialog={handleOpenDialog}
+        />
+        <DialogBox isOpen={isDialogOpen} onClose={handleCloseDialog} />
         <Nav />
-        <Hero />
-        <div className="w-4/5 m-auto max-container">
-          <Product openModal={handleOpenModal} />
-          <About />
-          <Features openDialog={handleOpenDialog}/>
+        <div className="flex flex-col gap-8">
+          <Hero />
+          <div className=" lg:w-1/2 m-auto max-container rounded-lg py-10">
+            <Product openModal={handleOpenModal} />
+          </div>
+          <div className=" bg-white lg:w-1/2 m-auto max-container rounded-lg py-10">
+            <About />
+            <Features openDialog={handleOpenDialog} />
+          </div>
         </div>
       </main>
     </>

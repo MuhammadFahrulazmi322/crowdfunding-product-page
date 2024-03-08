@@ -2,9 +2,9 @@ import React from "react";
 import { feature } from "../constants";
 import Button from "../components/Button";
 
-function Features({openDialog}) {
+function Features({ openDialog }) {
   return (
-    <section className="px-8 max-md:px-2 lg:px-40 lg:mt-10">
+    <section className="max-md:px-2 lg:mt-10 ">
       <div className="flex flex-col gap-8 lg:px-10">
         {feature.map((item) => (
           <div
@@ -25,19 +25,15 @@ function Features({openDialog}) {
                 left
               </p>
               <div>
-                {item.disabled ?
-                <Button
-                label="Out of Stock"
-                backgroundColor={"!bg-dark-gray cursor-default"}
-                textColor={"text-white"}
-
-              />
-                :
-                <Button
-                  label="Select Reward"
-                  
-                />
-                }
+                {item.disabled ? (
+                  <Button
+                    label="Out of Stock"
+                    backgroundColor={"!bg-dark-gray cursor-default"}
+                    textColor={"text-white"}
+                  />
+                ) : (
+                  <Button label="Select Reward" />
+                )}
               </div>
             </div>
           </div>
