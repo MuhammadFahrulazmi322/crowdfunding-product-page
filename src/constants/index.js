@@ -49,7 +49,7 @@ export const project = [
 
     selectedTitle: "",
     button1: 0,
-    button2: "",
+    button2: "Continue",
     disabled: false,
   },
   {

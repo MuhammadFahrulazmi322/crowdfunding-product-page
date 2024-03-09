@@ -114,7 +114,6 @@ function Modal({ isOpen, onClose, openDialog }) {
             </div>
 
             {selectedItem === item.title &&
-              item.button1 != "" &&
               item.stock != 0 && (
                 <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-4 justify-center border-t-2 py-4">
                   <h3 className="text-dark-gray ">Enter your pledge</h3>

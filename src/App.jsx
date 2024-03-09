@@ -6,6 +6,7 @@ import Hero from "./sections/Hero";
 import Nav from "./sections/Nav";
 import Product from "./sections/Product";
 import DialogBox from "./components/DialogBox";
+import Backed from "./sections/Backed";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -30,7 +31,7 @@ function App() {
   };
   return (
     <>
-      <main className={`pb-20 bg-gray-100`}>
+      <main className={` bg-gray-100`}>
         <Modal
           isOpen={isModalOpen}
           onClose={handleCloseModal}
@@ -38,12 +39,18 @@ function App() {
         />
         <DialogBox isOpen={isDialogOpen} onClose={handleCloseDialog} />
         <Nav />
-        <div className="flex flex-col gap-8">
-          <Hero />
-          <div className=" lg:w-1/2 m-auto max-container rounded-lg py-10">
+        <Hero />
+
+        <div className="flex flex-col gap-10 relative -translate-y-20">
+          <div className=" bg-white w-5/6 lg:w-1/2 lg:px-8  max-container rounded-lg pt-4  ">
             <Product openModal={handleOpenModal} />
           </div>
-          <div className=" bg-white lg:w-1/2 m-auto max-container rounded-lg py-10">
+          <div className=" bg-white w-5/6 lg:w-1/2 max-container rounded-lg pb-10 ">
+          <Backed/>
+
+          </div>
+
+          <div className=" bg-white w-5/6 lg:w-1/2 m-auto max-container rounded-lg py-10 ">
             <About />
             <Features openDialog={handleOpenDialog} />
           </div>
