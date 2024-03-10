@@ -31,7 +31,7 @@ function App() {
   };
   return (
     <>
-      <main className={` bg-gray-100`}>
+      <main className={` bg-gray-100 max-container`}>
         <Modal
           isOpen={isModalOpen}
           onClose={handleCloseModal}
@@ -46,8 +46,7 @@ function App() {
             <Product openModal={handleOpenModal} />
           </div>
           <div className=" bg-white w-5/6 lg:w-1/2 max-container rounded-lg pb-10 ">
-          <Backed/>
-
+            <Backed />
           </div>
 
           <div className=" bg-white w-5/6 lg:w-1/2 m-auto max-container rounded-lg py-10 ">
