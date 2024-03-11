@@ -10,7 +10,7 @@ function Product({ openModal }) {
     <section className="flex flex-col items-center gap-6 xl:gap-10 relative -translate-y-12">
       <img src={logoMastercraft} alt="" width={56} className="" />
       <div className="flex flex-col gap-4 items-center">
-        <h1 className="font-bold text-xl xl:text-3xl max-w-[250px] lg:max-w-full text-center">
+        <h1 className="font-bold text-xl xl:text-2xl max-w-[250px] lg:max-w-full text-center">
           Mastercraft Bamboo Monitor Riser
         </h1>
         <p className="max-w-[300px] lg:max-w-full text-center text-base  text-dark-gray ">
