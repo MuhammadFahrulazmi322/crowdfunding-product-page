@@ -10,16 +10,14 @@ const Nav = () => {
   };
 
   return (
-    <header className="p-8 lg:px-48 lg:py-14 absolute z-10 w-full max-container">
+    <header className="p-8 lg:pl-40 lg:pr-[9rem] lg:py-10 absolute z-10 w-full max-container">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img
             src={logo}
             alt="logo"
             className={`${
-              isMobileMenuOpen
-                ? "relative z-50 w-[100px]"
-                : "w-[100px] lg:w-[150px]"
+              isMobileMenuOpen ? "relative z-50 w-[130px]" : "w-[100px] "
             }`}
           />
         </a>

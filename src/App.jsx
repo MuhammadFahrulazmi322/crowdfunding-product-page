@@ -31,7 +31,7 @@ function App() {
   };
   return (
     <>
-      <main className={` bg-gray-100 max-container`}>
+      <main className={` bg-gray-50 max-container`}>
         <Modal
           isOpen={isModalOpen}
           onClose={handleCloseModal}
@@ -41,15 +41,15 @@ function App() {
         <Nav />
         <Hero />
 
-        <div className="flex flex-col gap-10 relative -translate-y-20">
-          <div className=" bg-white w-5/6 lg:w-1/2 lg:px-8  max-container rounded-lg pt-4  ">
+        <div className="flex flex-col gap-10 relative -translate-y-[92px]">
+          <div className=" bg-white w-[90%] lg:w-1/2 lg:px-8 px-2  max-container rounded-lg pt-4  ">
             <Product openModal={handleOpenModal} />
           </div>
-          <div className=" bg-white w-5/6 lg:w-1/2 max-container rounded-lg pb-10 ">
+          <div className=" bg-white w-[90%] lg:w-1/2 max-container rounded-lg pb-10 ">
             <Backed />
           </div>
 
-          <div className=" bg-white w-5/6 lg:w-1/2 m-auto max-container rounded-lg py-10 ">
+          <div className=" bg-white w-[90%] lg:w-1/2 m-auto max-container rounded-lg py-4 ">
             <About />
             <Features openDialog={handleOpenDialog} />
           </div>

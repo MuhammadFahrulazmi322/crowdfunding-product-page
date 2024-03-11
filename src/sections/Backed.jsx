@@ -4,10 +4,15 @@ import { backers } from "../constants";
 function Backed() {
   return (
     <>
-      <section className="flex flex-col lg:flex-row items-center lg:px-8 lg:items-start justify-center lg:justify-start gap-4 xl:gap-[20%] lg:gap-[15%] mt-10">
+      <section className="flex flex-col lg:flex-row items-center lg:px-8 lg:items-start justify-center lg:justify-start gap-4 lg:gap-12 mt-10">
         {backers.map((item, index) => (
-          <div key={index} className="flex flex-col items-center gap-2">
-            <h2 className="font-bold text-4xl max-md:text-3xl">{item.value}</h2>
+          <div
+            key={index}
+            className={`flex flex-col gap-2 lg:border-r-2 lg:pr-12 items-center lg:items-start  ${
+              !item.line && "lg:border-r-0"
+            }`}
+          >
+            <h2 className="font-bold text-3xl">{item.value}</h2>
             <p className="text-dark-gray">{item.label}</p>
             <hr
               className={` border-1 text-black w-[100px] mt-5 lg:hidden ${
