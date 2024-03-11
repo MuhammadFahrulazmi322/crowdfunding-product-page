@@ -41,7 +41,7 @@ function App() {
         <Nav />
         <Hero />
 
-        <div className="flex flex-col gap-10 relative -translate-y-[92px]">
+        <div className="flex flex-col gap-6 relative -translate-y-[92px]">
           <div className=" bg-white w-[90%] lg:w-1/2 lg:px-8 px-2  max-container rounded-lg pt-4  ">
             <Product openModal={handleOpenModal} />
           </div>
