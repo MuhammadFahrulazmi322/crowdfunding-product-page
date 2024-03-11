@@ -9,7 +9,7 @@ function Backed() {
           <div
             key={index}
             className={`flex flex-col gap-2 lg:border-r-2 lg:pr-12 items-center lg:items-start  ${
-              !item.line && "border-r-0"
+              !item.line && "border-none"
             }`}
           >
             <h2 className="font-bold text-3xl">{item.value}</h2>
