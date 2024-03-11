@@ -8,9 +8,10 @@ function Backed() {
         {backers.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col gap-2 lg:border-r-2 lg:pr-12 items-center lg:items-start  ${
-              !item.line && "border-none"
-            }`}
+            className={`flex flex-col gap-2 lg:border-r-2 lg:pr-12 items-center lg:items-start  
+            ${!item.line && "border-none"}
+            ${index == 1 && "lg:pr-20"}
+            `}
           >
             <h2 className="font-bold text-3xl">{item.value}</h2>
             <p className="text-dark-gray">{item.label}</p>
